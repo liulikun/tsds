@@ -116,38 +116,8 @@ describe TrainStation do
 
   end
 end
-#http://maps.google.com.au/maps?gl=au&mra=ap&jsv=323a&sll=-37.81182,145.01249&sspn=0.001076,0.003613&sz=19&output=dragdir&doflg=s&saddr=-37.812027,145.014144&daddr=-37.811612,145.010844
-#http://maps.google.com.au/maps?gl=au&mra=ap&jsv=323a&sll=-37.81182,145.01249&sspn=0.001076,0.003613&sz=19&output=dragdir&doflg=s&saddr=-37.8121912,145.0140166&daddr=-37.8239063,144.9897346
-#http://maps.google.com.au/maps?gl=au&mra=ap&jsv=323a&sll=-37.81182,145.01249&sspn=0.001076,0.003613&sz=19&output=dragdir&doflg=s&saddr=-37.8121912,145.0140166&daddr=-37.8239063,144.9897346
 
-
-#http://maps.googleapis.com/maps/api/directions/json?origin=678+Victoria+Street,+Richmond+victoria&destination=Richmond+Station,+Richmond+victoria&sensor=false
-
-
-#http://maps.google.com.au/maps?f=d&source=s_d&saddr=12+Helpmann+Avenue,+Point+Cook,+Victoria&daddr=laverton+station,+melbourne
-#
-#
-#
-#http://maps.googleapis.com/maps/api/geocode/json?address=12+Helpmann+Avenue,+Point+Cook,+Victoria&sensor=false
-#http://maps.googleapis.com/maps/api/geocode/json?address=laverton+station,+melbourne&sensor=false
-#
-#http://maps.googleapis.com/maps/api/geocode/json?address=678+Victoria+Street,+Richmond,+Victoria&sensor=false
-#http://maps.googleapis.com/maps/api/geocode/json?address=Richmond+Station,+Melbourne&sensor=false
-#http://maps.googleapis.com/maps/api/geocode/json?address=Tecoma+Station,+Melbourne&sensor=false
-#
-#
-#http://maps.google.com.au/maps?gl=au&mra=ap&jsv=325c&sll=-37.867965,144.766905&sspn=0.013755,0.065188&sz=15&output=dragdir&doflg=s&saddr=-37.8921200,144.7360840&daddr=-37.8633672,144.7737825
-#or simply:
-#http://maps.google.com.au/maps?gl=au&output=dragdir&saddr=-37.8921200,144.7360840&daddr=-37.8633672,144.7737825
-#
-#
-#
 #
 #http://maps.google.com.au/maps?gl=au&output=dragdir&saddr=-37.8121912,145.0140166&daddr=-37.8239063,144.9897346
-#http://maps.google.com.au/maps?gl=au&output=dragdir&saddr=-37.8121912,145.0140166&daddr=-37.8239063,144.9897346
-#
 
 #http://maps.googleapis.com/maps/api/geocode/json?address=Flinders+Street,+Melbourne+VIC+3000,+Australia&sensor=false
-#http://maps.googleapis.com/maps/api/geocode/json?address=Melbourne+Central,+Melbourne+VIC+3000,+Australia&sensor=false
-#http://maps.google.com.au/maps?gl=au&hl=en&mra=ap&dirflg=w&jsv=327b&sll=-37.816031,144.965313&sspn=0.001754,0.007398&sz=18&output=dragdir&doflg=s&saddr=-37.816582,144.963025&daddr=-37.81807,144.96761
-#http://maps.google.com.au/maps?gl=au&hl=en&mra=ap&dirflg=w&jsv=327b&sll=-37.817165,144.965315&sspn=0.003509,0.014795&sz=17&output=dragdir&doflg=s&saddr=-37.816582,144.963025&daddr=-37.81807,144.96761
