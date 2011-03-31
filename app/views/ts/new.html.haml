@@ -1,6 +1,7 @@
+%div.input
+  = form_for 'ts' do |f|
+    = f.label 'Address'
+    = f.text_field :address
 
-= form_for 'ts' do |f|
-  = f.label 'Address'
-  = f.text_field :address
-
-  = f.submit 'Submit'
+    = f.submit 'Submit'
+%img{:src => '/images/Melbourne_railways_map.gif'}
