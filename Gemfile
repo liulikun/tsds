@@ -14,6 +14,7 @@ gem 'rails', '3.0.1'
 # gem 'capistrano'
 gem 'geokit'
 gem 'json'
+gem 'haml'
 # To use debugger
 # gem 'ruby-debug'
 
