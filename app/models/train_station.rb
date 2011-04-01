@@ -505,7 +505,7 @@ class TrainStation
     nearest_station = ''
 
     direct_distances = calculate_direct_distances(lat, long)
-    direct_distances.sort { |a, b| a[1] <=> b[1] }[0..1].each { |elem|
+    direct_distances.sort { |a, b| a[1] <=> b[1] }[0..2].each { |elem|
       url = "http://maps.google.com.au/maps?gl=au&dirflg=w&output=dragdir&saddr=#{lat},#{long}&daddr=#{TM[elem[0]]}"
       resp = Net::HTTP.get_response(URI.parse(url))
 
