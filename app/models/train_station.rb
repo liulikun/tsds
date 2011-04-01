@@ -1,5 +1,7 @@
 class TrainStation
 
+  MELBOURNE = '-37.8131869,144.9629796'
+
   STATIONS = [
       'Alamein',
       'Ashburton',
@@ -488,6 +490,15 @@ class TrainStation
     end
   end
 
+  def self.cbd_distance lat, long
+    url = "http://maps.google.com.au/maps?gl=au&dirflg=w&output=dragdir&saddr=#{lat},#{long}&daddr=#{MELBOURNE}"
+    resp = Net::HTTP.get_response(URI.parse(url))
+
+    html = resp.body
+    html =~ /.*(\(([0-9\.]+).*;(.*)\/.*\)).*/
+    "Melbourne CBD =~ #{$2} #{$3}"
+  end
+
   def self.calculate_nearest_station lat, long
 
     shortest_walk_distance = 9999999
@@ -495,7 +506,7 @@ class TrainStation
 
     direct_distances = calculate_direct_distances(lat, long)
     direct_distances.sort { |a, b| a[1] <=> b[1] }[0..1].each { |elem|
-      url = "http://maps.google.com.au/maps?gl=au&dirflg=w&output=dragdir&saddr=#{lat},#{long}&daddr=#{TrainStation::TM[elem[0]]}"
+      url = "http://maps.google.com.au/maps?gl=au&dirflg=w&output=dragdir&saddr=#{lat},#{long}&daddr=#{TM[elem[0]]}"
       resp = Net::HTTP.get_response(URI.parse(url))
 
       html = resp.body
