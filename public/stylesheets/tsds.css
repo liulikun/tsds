@@ -12,3 +12,7 @@ img {
     width: 600px;
     height: 600px;
 }
+
+#train, #cbd {
+    color: green;
+}

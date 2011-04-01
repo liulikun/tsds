@@ -511,7 +511,7 @@ class TrainStation
 
       html = resp.body
       html =~ /.*(\(([0-9\.]+).*;(.*)\/.*\)).*/
-      candidate = "#{elem[0]} =~ #{$2} #{$3}"
+      candidate = "#{elem[0]} Train Station =~ #{$2} #{$3}"
 
       candidate_distance = $3.strip == 'km' ? ($2.to_f * 1000).to_i : $2.to_i
 
