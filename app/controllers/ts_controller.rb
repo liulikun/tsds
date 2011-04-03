@@ -26,7 +26,7 @@ class TsController < ApplicationController
     url = 'http://maps.googleapis.com/maps/api/geocode/json?address=' + URI.escape(address) + '&sensor=false'
     resp = Net::HTTP.get_response(URI.parse(url))
     result = JSON.parse(resp.body)
-    p "GEOCODING=#{result}"
+    p result 
 
     result['results'][0]['geometry']['location']
 
