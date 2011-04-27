@@ -1,0 +1,26 @@
+var latLngAddr = new google.maps.LatLng(<%=@location['lat']%>, <%=@location['lng']%>);
+var tsAddr = new google.maps.LatLng(<%=TrainStation::TM[@train[0]].split(',')[0]%>, <%=TrainStation::TM[@train[0]].split(',')[1]%>);
+map.setCenter(latLngAddr);
+var marker = new google.maps.Marker({
+    position: latLngAddr,
+    title: "From Here"
+});
+
+var tsMarker = new google.maps.Marker({
+    position: tsAddr,
+    title: "<%=@train[0]%>" + " Station"
+});
+
+for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+}
+
+// To add the marker to the map, call setMap();
+marker.setMap(map);
+tsMarker.setMap(map);
+markers.push(marker);
+markers.push(tsMarker);
+
+
+$('#train').html("<%=@train[0]%>" + " Train Station =~ " + "<%=@train[1]%>")
+$('#cbd').html("<%=@cbd%>")

@@ -15,9 +15,9 @@ class TsController < ApplicationController
 
   def create
     address = params['ts']['address']
-    location = geo_location(address)
-    @train = TrainStation.calculate_nearest_station(location['lat'], location['lng'])
-    @cbd = TrainStation.cbd_distance(location['lat'], location['lng'])
+    @location = geo_location(address)
+    @train = TrainStation.calculate_nearest_station(@location['lat'], @location['lng'])
+    @cbd = TrainStation.cbd_distance(@location['lat'], @location['lng'])
 
     render :result
   end

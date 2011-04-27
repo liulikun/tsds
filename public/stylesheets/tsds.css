@@ -16,3 +16,9 @@ img {
 #train, #cbd {
     color: green;
 }
+
+#map_canvas {
+    height: 500px;
+    width: 400px;
+    margin: auto;
+}

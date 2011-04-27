@@ -502,7 +502,7 @@ class TrainStation
   def self.calculate_nearest_station lat, long
 
     shortest_walk_distance = 9999999
-    nearest_station = ''
+    nearest_station = []
 
     direct_distances = calculate_direct_distances(lat, long)
     direct_distances.sort { |a, b| a[1] <=> b[1] }[0..2].each { |elem|
@@ -511,7 +511,7 @@ class TrainStation
 
       html = resp.body
       html =~ /.*(\(([0-9\.]+).*;(.*)\/.*\)).*/
-      candidate = "#{elem[0]} Train Station =~ #{$2} #{$3}"
+      candidate = ["#{elem[0]}", "#{$2} #{$3}"]
 
       candidate_distance = $3.strip == 'km' ? ($2.to_f * 1000).to_i : $2.to_i
 
