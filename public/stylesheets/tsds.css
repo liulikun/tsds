@@ -18,7 +18,7 @@ img {
 }
 
 #map_canvas {
-    height: 500px;
-    width: 400px;
+    height: 90%;
+    width: 90%;
     margin: auto;
 }
